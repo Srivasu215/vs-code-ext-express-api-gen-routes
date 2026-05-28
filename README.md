@@ -1,60 +1,177 @@
-# EndPointGen VS Code Extension
+# vs-code-ext-express-api-gen-routes 🚀
 
-## Overview
+AI-powered route management extension for Visual Studio Code.
 
-**EndPointGen** is a Visual Studio Code extension developed by **KeshavSoft** focused on **AI-assisted server-side development using Node.js and Express**.  
-It helps developers quickly generate endpoints, sub-routes, and API structure directly from the Explorer context menu.
-
----
-
-## Demo
-
-![Demo](Docs/Information/demo.gif)
+Quickly create Express sub-routes and automatically fix missing route code directly from the VS Code Title Bar and Explorer context menu.
 
 ---
 
-## Installation
+# ✨ Overview
 
-1. Open VS Code  
-2. Go to Extensions  
-3. Search: **EndPointGen**  
-4. Click Install  
+**vs-code-ext-express-api-gen-routes** is a Visual Studio Code extension developed by **KeshavSoft** for improving Express.js route management and reducing manual backend maintenance.
 
----
+This extension focuses on two important developer tasks:
 
-## Features
-
-- Generate Express.js API structure instantly  
-- Create endpoints in `app.js` with minimal effort  
-- Add modular sub-routes in `routes.js`  
-- Inject endpoint logic into `.js` files  
-- Context-aware right-click actions in Explorer  
-- Modular orchestration-based architecture  
+* Creating modular sub-routes automatically
+* Fixing incomplete or broken route files instantly
 
 ---
 
-## Commands
+# 🎯 Main Features
 
-| Command                  | Title             | Description                                               |
-|--------------------------|-------------------|-----------------------------------------------------------|
-| extension.initJs         | Initiate Node API | Initializes base Express server structure                |
-| extension.createEndpoint | CreateEndpoint    | Creates a new route entry in `app.js`                    |
-| extension.addSubRoute    | AddSubRoute       | Registers sub-route modules in `routes.js`               |
-| extension.addEndPoint    | AddEndPoint       | Injects endpoint logic into selected `.js` file          |
+## ➕ addSubRoute
+
+Automatically creates and registers sub-route structures for Express applications.
+
+The extension generates:
+
+* Route files
+* Router configuration
+* Route registration
+* Modular API structure
+
+### Example
+
+```js id="c3m7e0"
+router.use("/users", usersRouter);
+```
 
 ---
 
-## Usage
+## 🛠️ fix
 
-- Open your Node.js project in VS Code  
-- Right-click on a file or folder  
-- Select a command from the context menu  
-- Extension generates/updates files automatically  
+The **fix** command automatically detects and regenerates missing or incomplete route code inside selected files.
+
+### Example Problems Fixed
+
+Missing export:
+
+```js id="ecf7r1"
+export { router };
+```
+
+Missing router initialization:
+
+```js id="w7lfc2"
+const router = express.Router();
+```
+
+Missing imports:
+
+```js id="m1f8d9"
+import express from "express";
+```
+
+The extension automatically regenerates required code sections and fixes structure issues.
 
 ---
 
-## Example
+# ⚡ Features
 
-**Before**
-```js
-// No routes
+✅ Create Express sub-routes instantly
+✅ Auto-fix broken or incomplete route files
+✅ Reduce repetitive backend coding
+✅ Modular Express architecture support
+✅ VS Code Explorer integration
+✅ Faster Node.js API development
+✅ Beginner-friendly workflow
+
+---
+
+# 🖼️ Workflow
+
+## addSubRoute
+
+1. Right-click a folder or file
+2. Select:
+
+```bash id="5j4px2"
+addSubRoute
+```
+
+3. Enter sub-route name
+4. Extension generates route structure automatically
+
+---
+
+## fix
+
+1. Open broken route file
+2. Click:
+
+```bash id="rq3v6m"
+fix
+```
+
+3. Extension scans the file
+4. Missing code is regenerated automatically
+
+---
+
+# 📁 Folder Structure
+
+```bash id="y6w4ha"
+vs-code-ext-express-api-gen-routes
+│
+├── .vscode
+├── archive
+├── Docs
+├── node_modules
+├── src
+├── test
+│
+├── extension.js
+├── package.json
+├── README.md
+└── CHANGELOG.md
+```
+
+---
+
+# 🛠️ Commands
+
+| Command       | Description                                |
+| ------------- | ------------------------------------------ |
+| `addSubRoute` | Creates modular Express sub-routes         |
+| `fix`         | Detects and regenerates missing route code |
+
+---
+
+# 🚀 Why Use This Extension?
+
+* Save backend development time
+* Quickly repair broken route files
+* Maintain clean Express architecture
+* Improve productivity inside VS Code
+* Avoid repetitive manual fixes
+
+---
+
+# 🧠 Built With
+
+* Node.js
+* Express.js
+* JavaScript
+* VS Code Extension API
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# 👨‍💻 Author
+
+Developed by **KeshavSoft**
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🚀 Share with developers
