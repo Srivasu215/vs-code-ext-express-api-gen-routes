@@ -1,4 +1,4 @@
-import { registerAllCommands as ForEditorTitle } from './ForEditorTitle/registerCommands.js';
+import ForEditorTitle from './ForEditorTitle/routesJsFileCommands.js';
 
 export function registerAllCommands(context) {
     ForEditorTitle(context);
