@@ -6,6 +6,17 @@ Quickly create Express sub-routes and automatically fix missing route code direc
 
 ---
 
+# ✨ Overview
+
+**vs-code-ext-express-api-gen-routes** is a Visual Studio Code extension developed by **KeshavSoft** for improving Express.js route management and reducing manual backend maintenance.
+
+This extension focuses on two important developer tasks:
+
+* Creating modular sub-routes automatically
+* Fixing incomplete or broken route files instantly
+
+---
+
 # 🎯 Main Features
 
 ## ➕ addSubRoute
@@ -55,25 +66,64 @@ The extension automatically regenerates required code sections and fixes structu
 
 ---
 
+# ⚡ Features
+
+✅ Create Express sub-routes instantly
+✅ Auto-fix broken or incomplete route files
+✅ Reduce repetitive backend coding
+✅ Modular Express architecture support
+✅ VS Code Explorer integration
+✅ Faster Node.js API development
+✅ Beginner-friendly workflow
+
+---
+
+# 🖼️ Workflow
+
+## addSubRoute
+
+1. Right-click a folder or file
+2. Select:
+
+```bash id="5j4px2"
+addSubRoute
+```
+
+3. Enter sub-route name
+4. Extension generates route structure automatically
+
+---
+
+## fix
+
+1. Open broken route file
+2. Click:
+
+```bash id="rq3v6m"
+fix
+```
+
+3. Extension scans the file
+4. Missing code is regenerated automatically
+
+---
+
 # 📁 Folder Structure
 
-```bash id="n6y4qp"
-vs-code-ext-boilerplate
+```bash id="y6w4ha"
+vs-code-ext-express-api-gen-routes
 │
 ├── .vscode
-├── Config
-├── Public
+├── archive
+├── Docs
 ├── node_modules
-├── .env
-├── .env.local
-├── app.js
-├── config.json
-├── configLoader.js
-├── package-lock.json
+├── src
+├── test
+│
+├── extension.js
 ├── package.json
-├── port.js
-├── routes.js
-└── server.js
+├── README.md
+└── CHANGELOG.md
 ```
 
 ---
@@ -99,11 +149,10 @@ vs-code-ext-boilerplate
 
 # 🧠 Built With
 
-* Node.js (https://nodejs.org)
-* Express.js (https://expressjs.com)
-* VS Code Extension API (https://code.visualstudio.com/)
+* Node.js
+* Express.js
 * JavaScript
-* HTML5
+* VS Code Extension API
 
 ---
 
@@ -113,28 +162,16 @@ MIT License
 
 ---
 
-# Support
+# 👨‍💻 Author
 
-* ⭐ Star the Repository
+Developed by **KeshavSoft**
 
-  ```md
-  (https://github.com/keshavsoft/vs-code-ext-express-api-gen-routes)
-  ```
+---
 
-* 🍴 Fork the Repository
+# ⭐ Support
 
-  ```md
-  (https://github.com/your-username/vs-code-ext-express-api-gen-routes/fork)
-  ```
+If you like this project:
 
-* 🚀 Share with Developers
-
-  ```md
-  (https://marketplace.visualstudio.com/items?itemName=KeshavSoft.vs-code-ext-express-api-gen-routes)
-  ```
-
-* 🛒 VS Code Marketplace Extension
-
-  ```md
-  (https://marketplace.visualstudio.com/items?itemName=KeshavSoft.vs-code-ext-express-api-gen-routes)
-  ```
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🚀 Share with developers
